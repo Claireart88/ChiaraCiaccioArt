@@ -67,9 +67,9 @@ const About = () => {
           <div className="relative">
             <div className="aspect-square bg-gradient-to-br from-peacock-50 via-white to-gold-50 rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Chiara Ciaccio nel suo studio"
-                className="w-full h-full object-cover"
+                src="/ChiaraCiaccio.PNG"
+                alt="Chiara Ciaccio - Artista Contemporanea"
+                className="w-full h-full object-cover object-center"
               />
             </div>
             
