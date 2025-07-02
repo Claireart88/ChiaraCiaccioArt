@@ -5,9 +5,9 @@ const About = () => {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
-          <div className="space-y-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+          {/* Text Content - Now takes 2/3 of the space */}
+          <div className="lg:col-span-2 space-y-8">
             <div>
               <h2 className="text-4xl md:text-5xl font-light text-night-900 mb-6">
                 Chi Sono
@@ -63,19 +63,19 @@ const About = () => {
             </div>
           </div>
 
-          {/* Image */}
-          <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-peacock-50 via-white to-gold-50 rounded-2xl overflow-hidden shadow-2xl">
+          {/* Image - Now takes 1/3 of the space */}
+          <div className="lg:col-span-1 relative">
+            <div className="aspect-[3/4] bg-gradient-to-br from-peacock-50 via-white to-gold-50 rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="/ChiaraCiaccio.PNG"
+                src="/images/immagine profilo.jpg"
                 alt="Chiara Ciaccio - Artista Contemporanea"
                 className="w-full h-full object-cover object-center"
               />
             </div>
             
             {/* Decorative elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-br from-peacock-200/60 to-peacock-300/60 rounded-full opacity-60 blur-lg"></div>
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-br from-gold-200/40 to-gold-300/40 rounded-full opacity-40 blur-xl"></div>
+            <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-peacock-200/60 to-peacock-300/60 rounded-full opacity-60 blur-lg"></div>
+            <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-gradient-to-br from-gold-200/40 to-gold-300/40 rounded-full opacity-40 blur-xl"></div>
           </div>
         </div>
       </div>
