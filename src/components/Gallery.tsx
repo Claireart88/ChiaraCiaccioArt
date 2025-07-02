@@ -91,7 +91,7 @@ const Gallery = () => {
       year: "2024",
       dimensions: "60 × 80 cm",
       price: "€ 2.100",
-      available: true,
+      available: false,
       image: "/images/WhatsApp Image 2025-07-02 at 15.19.36.jpeg",
       description: "La resina epossidica crea un effetto di profondità liquida che esalta le cromature blu e verdi. Le miscele cromatiche si fondono in trasparenze luminose, mentre la superficie lucida riflette la luce creando un gioco di riflessi che dona vita e movimento all'opera."
     },
