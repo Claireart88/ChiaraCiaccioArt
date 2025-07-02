@@ -25,8 +25,8 @@ const Header = () => {
             <a href="#gallery" className="text-night-700 hover:text-peacock-700 transition-colors duration-200 font-light">
               Opere
             </a>
-            <a href="#exhibitions" className="text-night-700 hover:text-peacock-700 transition-colors duration-200 font-light">
-              Esposizioni
+            <a href="#portfolio" className="text-night-700 hover:text-peacock-700 transition-colors duration-200 font-light">
+              Portfolio
             </a>
             <a href="#contact" className="text-night-700 hover:text-peacock-700 transition-colors duration-200 font-light">
               Contatti
@@ -68,11 +68,11 @@ const Header = () => {
                 Opere
               </a>
               <a
-                href="#exhibitions"
+                href="#portfolio"
                 className="text-night-700 hover:text-peacock-700 transition-colors duration-200 font-light"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Esposizioni
+                Portfolio
               </a>
               <a
                 href="#contact"

@@ -63,8 +63,8 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#exhibitions" className="text-gray-400 hover:text-peacock-400 transition-colors">
-                  Esposizioni
+                <a href="#portfolio" className="text-gray-400 hover:text-peacock-400 transition-colors">
+                  Portfolio
                 </a>
               </li>
               <li>
@@ -81,9 +81,9 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li>Opere Originali</li>
               <li>Commissioni Personalizzate</li>
-              <li>Workshop Artistici</li>
+              <li>Portfolio Digitale</li>
               <li>Consulenze Creative</li>
-              <li>Restauro Opere</li>
+              <li>Materiale Promozionale</li>
             </ul>
           </div>
         </div>
