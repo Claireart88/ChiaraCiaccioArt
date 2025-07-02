@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Futura font fallback and custom styles */
+@layer base {
+  body {
+    font-family: 'Futura', 'Futura PT', 'Century Gothic', 'Avenir', system-ui, sans-serif;
+    font-feature-settings: 'kern' 1, 'liga' 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Futura', 'Futura PT', 'Century Gothic', 'Avenir', system-ui, sans-serif;
+    letter-spacing: -0.025em;
+  }
+}

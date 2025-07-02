@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Futura', 'Futura PT', 'Century Gothic', 'Avenir', 'system-ui', 'sans-serif'],
       },
       colors: {
         // Palette artistica e sofisticata
