@@ -13,8 +13,9 @@ const Header = () => {
             <img
               src="/images/WhatsApp Image 2025-07-04 at 18.44.41.jpeg"
               alt="Chiara Ciaccio"
-              className="h-12 w-auto object-contain"
+              className="h-16 w-auto object-contain"
             />
+            <span className="text-xl font-light text-night-900">Chiara Ciaccio</span>
           </div>
 
           {/* Desktop Navigation */}
