@@ -70,17 +70,6 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-peacock-700 rounded-full flex items-center justify-center">
-                    <MapPin className="h-6 w-6 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg font-medium text-night-900">Studio</h4>
-                    <p className="text-night-700">Via dell'Arte, 123</p>
-                    <p className="text-night-700">20100 Milano, Italia</p>
-                    <p className="text-sm text-night-600 mt-1">Visite su appuntamento</p>
-                  </div>
-                </div>
               </div>
             </div>
 
