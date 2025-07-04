@@ -14,7 +14,7 @@ const Hero = () => {
           <img
             src="/images/WhatsApp Image 2025-07-04 at 18.44.41.jpeg"
             alt="Chiara Ciaccio"
-            className="h-24 md:h-32 w-auto object-contain"
+            className="h-32 md:h-48 lg:h-56 w-auto object-contain max-w-full"
           />
         </div>
         
