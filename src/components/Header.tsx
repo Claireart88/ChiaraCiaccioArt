@@ -10,12 +10,8 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img
-              src="/images/WhatsApp Image 2025-07-04 at 18.44.41.jpeg"
-              alt="Chiara Ciaccio"
-              className="h-16 w-auto object-contain"
-            />
-            <span className="text-xl font-light text-night-900">Chiara Ciaccio</span>
+            <Palette className="h-8 w-8 text-peacock-700" />
+            <span className="text-xl font-light text-peacock-700">Chiara Ciaccio</span>
           </div>
 
           {/* Desktop Navigation */}
