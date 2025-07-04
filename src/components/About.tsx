@@ -17,17 +17,19 @@ const About = () => {
 
             <div className="space-y-6 text-night-700 leading-relaxed">
               <p className="text-lg">
-                Chiara Ciaccio è un'artista visiva che ha sviluppato una ricerca artistica 
+                Sono un'artista visiva che ha sviluppato una ricerca artistica 
                 centrata sull'esplorazione dell'identità, delle emozioni e dell'interiorità. 
-                Dopo la formazione presso l'Accademia di Belle Arti, ha partecipato a mostre 
-                collettive e personali, distinguendosi per uno stile che unisce figurazione 
-                ed elementi astratti.
+                Dopo aver completato la formazione presso il Liceo Europeo a indirizzo artistico 
+                di Palermo, mi sono laureata in Economia Aziendale e in Comunicazione d'Impresa. 
+                Negli anni successivi al diploma ho proseguito la mia carriera artistica, 
+                realizzando numerose opere e distinguendomi per uno stile che fonde elementi 
+                figurativi e astratti.
               </p>
               
               <p>
-                La sua poetica indaga il conflitto tra ciò che è visibile e ciò che rimane 
+                La mia poetica indaga il conflitto tra ciò che è visibile e ciò che rimane 
                 nascosto, traducendo esperienze personali e universali in opere di forte 
-                impatto emotivo. L'uso del colore e della materia diventa mezzo per dare 
+                impatto emotivo. L'uso del colore e della materia diventa per me mezzo per dare 
                 corpo alle sensazioni più profonde.
               </p>
 
