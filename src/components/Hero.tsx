@@ -10,12 +10,13 @@ const Hero = () => {
       <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-gradient-to-br from-night-100/20 to-night-200/20 rounded-full opacity-30 blur-lg"></div>
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-5xl md:text-7xl font-light text-night-900 mb-6 leading-tight">
-          Chiara
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-peacock-700 via-peacock-600 to-gold-500">
-            Ciaccio
-          </span>
-        </h1>
+        <div className="mb-8 flex justify-center">
+          <img
+            src="/images/WhatsApp Image 2025-07-04 at 18.44.41.jpeg"
+            alt="Chiara Ciaccio"
+            className="h-24 md:h-32 w-auto object-contain"
+          />
+        </div>
         
         <p className="text-xl md:text-2xl text-night-700 mb-8 font-light leading-relaxed">
           Artista visiva contemporanea

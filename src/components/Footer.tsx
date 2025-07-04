@@ -9,8 +9,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <Palette className="h-8 w-8 text-peacock-400" />
-              <span className="text-2xl font-light">Chiara Ciaccio</span>
+              <img
+                src="/images/WhatsApp Image 2025-07-04 at 18.44.41.jpeg"
+                alt="Chiara Ciaccio"
+                className="h-10 w-auto object-contain brightness-0 invert opacity-80"
+              />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
               Artista visiva contemporanea che esplora l'identità e le emozioni 
