@@ -35,7 +35,7 @@ const Footer = () => {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="mailto:chiara.ciaccio.art@gmail.com"
+                href="mailto:chiaraciaccio.art@gmail.com"
                 className="w-10 h-10 bg-night-700 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300"
               >
                 <Mail className="h-5 w-5" />

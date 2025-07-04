@@ -23,7 +23,7 @@ const Portfolio = () => {
       pages: "16 pagine",
       icon: Image,
       downloadUrl: "/portfolio/Serie-Femminile-Catalogo.pdf",
-      preview: "https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg?auto=compress&cs=tinysrgb&w=600"
+      preview: "/images/WhatsApp Image 2025-07-02 at 14.56.37.jpeg"
     },
     {
       id: 3,
