@@ -281,11 +281,11 @@ const Gallery = () => {
         {/* Lightbox */}
         {selectedImage !== null && (
           <div className="fixed inset-0 z-50 bg-night-900/90 flex items-center justify-center p-4">
-            <div className="relative max-w-4xl w-full">
+            <div className="relative max-w-6xl w-full max-h-[90vh] overflow-y-auto">
               {/* Close Button */}
               <button
                 onClick={closeLightbox}
-                className="absolute top-4 right-4 z-10 p-2 bg-white/20 rounded-full text-white hover:bg-white/30 transition-colors"
+                className="absolute top-4 right-4 z-20 p-2 bg-white/20 rounded-full text-white hover:bg-white/30 transition-colors"
               >
                 <X className="h-6 w-6" />
               </button>
@@ -293,38 +293,38 @@ const Gallery = () => {
               {/* Navigation Buttons */}
               <button
                 onClick={prevImage}
-                className="absolute left-4 top-1/2 -translate-y-1/2 z-10 p-2 bg-white/20 rounded-full text-white hover:bg-white/30 transition-colors"
+                className="absolute left-4 top-1/3 -translate-y-1/2 z-20 p-2 bg-white/20 rounded-full text-white hover:bg-white/30 transition-colors"
               >
                 <ChevronLeft className="h-6 w-6" />
               </button>
               <button
                 onClick={nextImage}
-                className="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-2 bg-white/20 rounded-full text-white hover:bg-white/30 transition-colors"
+                className="absolute right-4 top-1/3 -translate-y-1/2 z-20 p-2 bg-white/20 rounded-full text-white hover:bg-white/30 transition-colors"
               >
                 <ChevronRight className="h-6 w-6" />
               </button>
 
               {/* Image and Details */}
               <div className="bg-white rounded-2xl overflow-hidden">
-                <div className="max-h-[70vh] flex items-center justify-center bg-gray-50">
+                <div className="h-[50vh] flex items-center justify-center bg-gray-50 p-4">
                   <img
                     src={filteredArtworks[selectedImage].image}
                     alt={filteredArtworks[selectedImage].title}
-                    className="max-w-full max-h-full object-contain"
+                    className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
                   />
                 </div>
                 
-                <div className="p-6">
+                <div className="p-8">
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <h3 className="text-2xl font-light text-night-900 mb-2">
+                      <h3 className="text-3xl font-light text-night-900 mb-4">
                         {filteredArtworks[selectedImage].title}
                       </h3>
-                      <p className="text-night-700 mb-4 leading-relaxed">
+                      <p className="text-lg text-night-700 mb-6 leading-relaxed max-w-4xl">
                         {filteredArtworks[selectedImage].description}
                       </p>
                     </div>
-                    <span className={`px-3 py-1 rounded-full text-sm font-medium ${
+                    <span className={`px-4 py-2 rounded-full text-base font-medium flex-shrink-0 ml-4 ${
                       filteredArtworks[selectedImage].available 
                         ? 'bg-peacock-100 text-peacock-800' 
                         : 'bg-night-100 text-night-800'
@@ -333,22 +333,74 @@ const Gallery = () => {
                     </span>
                   </div>
                   
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-night-700">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-base text-night-700">
                     <div>
-                      <span className="font-medium">Tecnica:</span>
-                      <p>{filteredArtworks[selectedImage].technique}</p>
+                      <span className="font-medium text-night-900 block mb-1">Tecnica:</span>
+                      <p className="text-night-700">{filteredArtworks[selectedImage].technique}</p>
                     </div>
                     <div>
-                      <span className="font-medium">Dimensioni:</span>
-                      <p>{filteredArtworks[selectedImage].dimensions}</p>
+                      <span className="font-medium text-night-900 block mb-1">Dimensioni:</span>
+                      <p className="text-night-700">{filteredArtworks[selectedImage].dimensions}</p>
                     </div>
                     <div>
-                      <span className="font-medium">Anno:</span>
-                      <p>{filteredArtworks[selectedImage].year}</p>
+                      <span className="font-medium text-night-900 block mb-1">Anno:</span>
+                      <p className="text-night-700">{filteredArtworks[selectedImage].year}</p>
                     </div>
                     <div>
-                      <span className="font-medium">Informazioni:</span>
-                      <p className="text-peacock-600 font-medium">
+                      <span className="font-medium text-night-900 block mb-1">Informazioni:</span>
+                      <div className="space-y-2">
+                        <p className="text-peacock-600 font-medium">
+                          <a 
+                            href="#contact" 
+                            className="hover:text-peacock-800 transition-colors block"
+                            onClick={closeLightbox}
+                          >
+                            Contattaci per dettagli
+                          </a>
+                        </p>
+                        <p className="text-peacock-600 font-medium">
+                          <a 
+                            href="#contact" 
+                            className="hover:text-peacock-800 transition-colors block"
+                            onClick={closeLightbox}
+                          >
+                            Scrivici per maggiori informazioni
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Contact Call-to-Action */}
+                  <div className="mt-8 p-6 bg-peacock-50 rounded-xl border border-peacock-100">
+                    <div className="text-center">
+                      <h4 className="text-xl font-medium text-night-900 mb-3">
+                        Interessato a quest'opera?
+                      </h4>
+                      <p className="text-night-700 mb-4 text-lg">
+                        Contattaci via email per ricevere maggiori informazioni, 
+                        prezzi e disponibilità di questa opera.
+                      </p>
+                      <a
+                        href="#contact"
+                        onClick={closeLightbox}
+                        className="inline-flex items-center px-6 py-3 bg-peacock-700 text-white rounded-full hover:bg-peacock-800 transition-all duration-300 font-medium text-lg"
+                      >
+                        Contattaci per Email
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+};
+
+export default Gallery;
                         <a 
                           href="#contact" 
                           className="hover:text-peacock-800 transition-colors"
