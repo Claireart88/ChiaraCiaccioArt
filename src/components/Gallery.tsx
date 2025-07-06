@@ -285,7 +285,7 @@ const Gallery = () => {
               {/* Close Button */}
               <button
                 onClick={closeLightbox}
-                className="absolute top-4 right-4 z-20 p-2 bg-white/20 rounded-full text-white hover:bg-white/30 transition-colors"
+                className="absolute top-4 right-4 z-20 p-3 bg-peacock-700 rounded-full text-white hover:bg-peacock-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110"
               >
                 <X className="h-6 w-6" />
               </button>
@@ -293,13 +293,13 @@ const Gallery = () => {
               {/* Navigation Buttons */}
               <button
                 onClick={prevImage}
-                className="absolute left-4 top-1/3 -translate-y-1/2 z-20 p-2 bg-white/20 rounded-full text-white hover:bg-white/30 transition-colors"
+                className="absolute left-4 top-1/3 -translate-y-1/2 z-20 p-3 bg-peacock-700 rounded-full text-white hover:bg-peacock-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110"
               >
                 <ChevronLeft className="h-6 w-6" />
               </button>
               <button
                 onClick={nextImage}
-                className="absolute right-4 top-1/3 -translate-y-1/2 z-20 p-2 bg-white/20 rounded-full text-white hover:bg-white/30 transition-colors"
+                className="absolute right-4 top-1/3 -translate-y-1/2 z-20 p-3 bg-peacock-700 rounded-full text-white hover:bg-peacock-800 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110"
               >
                 <ChevronRight className="h-6 w-6" />
               </button>
