@@ -101,7 +101,7 @@ const Gallery = () => {
       category: "resina",
       technique: "Resina epossidica e acrilico su tela",
       year: "2024",
-      dimensions: "70 × 50 cm",
+      dimensions: "50 × 70 cm",
       price: "€ 1.900",
       available: false,
       image: "/images/WhatsApp Image 2025-07-02 at 15.19.37.jpeg",
