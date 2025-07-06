@@ -306,11 +306,11 @@ const Gallery = () => {
 
               {/* Image and Details */}
               <div className="bg-white rounded-2xl overflow-hidden">
-                <div className="aspect-square md:aspect-video">
+                <div className="max-h-[70vh] flex items-center justify-center bg-gray-50">
                   <img
                     src={filteredArtworks[selectedImage].image}
                     alt={filteredArtworks[selectedImage].title}
-                    className="w-full h-full object-cover"
+                    className="max-w-full max-h-full object-contain"
                   />
                 </div>
                 
@@ -347,8 +347,20 @@ const Gallery = () => {
                       <p>{filteredArtworks[selectedImage].year}</p>
                     </div>
                     <div>
-                      <span className="font-medium">Prezzo:</span>
-                      <p className="text-gold-600 font-medium">{filteredArtworks[selectedImage].price}</p>
+                      <span className="font-medium">Informazioni:</span>
+                      <p className="text-peacock-600 font-medium">
+                        <a 
+                          href="#contact" 
+                          className="hover:text-peacock-800 transition-colors"
+                          onClick={closeLightbox}
+                        >
+                          Contattaci per dettagli
+                        </a>
+                      </p>
+                        <a href="#contact" className="hover:text-peacock-800 transition-colors">
+                          Scrivici per maggiori informazioni
+                        </a>
+                      </p>
                     </div>
                   </div>
                 </div>
