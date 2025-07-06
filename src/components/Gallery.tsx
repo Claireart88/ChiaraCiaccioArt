@@ -101,7 +101,7 @@ const Gallery = () => {
       category: "resina",
       technique: "Resina epossidica e acrilico su tela",
       year: "2024",
-      dimensions: "50 × 70 cm",
+      dimensions: "70 × 50 cm",
       price: "€ 1.900",
       available: false,
       image: "/images/WhatsApp Image 2025-07-02 at 15.19.37.jpeg",
@@ -139,7 +139,7 @@ const Gallery = () => {
       category: "astratta",
       technique: "Acrilico su tela",
       year: "2011",
-      dimensions: "40 × 30 cm",
+      dimensions: "30 × 40 cm",
       price: "€ 1.400",
       available: true,
       image: "/images/WhatsApp Image 2025-07-02 at 14.56.40 (3).jpeg",
@@ -250,7 +250,9 @@ const Gallery = () => {
                   <img
                     src={artwork.image}
                     alt={artwork.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ${
+                      artwork.id === 8 || artwork.id === 11 ? 'rotate-90' : ''
+                    }`}
                   />
                 </div>
                 
@@ -310,7 +312,9 @@ const Gallery = () => {
                   <img
                     src={filteredArtworks[selectedImage].image}
                     alt={filteredArtworks[selectedImage].title}
-                    className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
+                    className={`max-w-full max-h-full object-contain rounded-lg shadow-lg ${
+                      filteredArtworks[selectedImage].id === 8 || filteredArtworks[selectedImage].id === 11 ? 'rotate-90' : ''
+                    }`}
                   />
                 </div>
                 
