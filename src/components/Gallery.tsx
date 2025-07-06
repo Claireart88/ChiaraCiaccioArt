@@ -34,7 +34,7 @@ const Gallery = () => {
     {
       id: 3,
       title: "Madre Natura",
-      category: "femminile",
+      category: "femminile", 
       technique: "Olio e cera su tela",
       year: "2019",
       dimensions: "70 × 50 cm",
@@ -50,7 +50,7 @@ const Gallery = () => {
       title: "Contrasti Complementari",
       category: "colatura",
       technique: "Acrilico, cera e texture su tela con tecnica a colatura",
-      year: "2022",
+      year: "2022", 
       dimensions: "30 × 40 cm",
       price: "€ 1.600",
       available: true,
@@ -63,7 +63,7 @@ const Gallery = () => {
       category: "colatura",
       technique: "Acrilico e texture miste con tecnica a colatura",
       year: "2011",
-      dimensions: "50 × 70 cm",
+      dimensions: "50 × 70 cm", 
       price: "€ 2.200",
       available: true,
       image: "/images/WhatsApp Image 2025-07-02 at 14.56.40.jpeg",
@@ -388,31 +388,6 @@ const Gallery = () => {
                       >
                         Contattaci per Email
                       </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
-    </section>
-  );
-};
-
-export default Gallery;
-                        <a 
-                          href="#contact" 
-                          className="hover:text-peacock-800 transition-colors"
-                          onClick={closeLightbox}
-                        >
-                          Contattaci per dettagli
-                        </a>
-                        <br />
-                        <a href="#contact" className="hover:text-peacock-800 transition-colors" onClick={closeLightbox}>
-                          Scrivici per maggiori informazioni
-                        </a>
-                      </p>
                     </div>
                   </div>
                 </div>
