@@ -356,8 +356,8 @@ const Gallery = () => {
                         >
                           Contattaci per dettagli
                         </a>
-                      </p>
-                        <a href="#contact" className="hover:text-peacock-800 transition-colors">
+                        <br />
+                        <a href="#contact" className="hover:text-peacock-800 transition-colors" onClick={closeLightbox}>
                           Scrivici per maggiori informazioni
                         </a>
                       </p>
