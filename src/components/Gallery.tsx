@@ -139,7 +139,7 @@ const Gallery = () => {
       category: "astratta",
       technique: "Acrilico su tela",
       year: "2011",
-      dimensions: "30 × 40 cm",
+      dimensions: "40 × 30 cm",
       price: "€ 1.400",
       available: true,
       image: "/images/WhatsApp Image 2025-07-02 at 14.56.40 (3).jpeg",
