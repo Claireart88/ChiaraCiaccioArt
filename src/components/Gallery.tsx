@@ -246,13 +246,16 @@ const Gallery = () => {
               onClick={() => openLightbox(index)}
             >
               <div className="relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105">
-                <div className="aspect-square bg-gray-200">
+                <div className="aspect-square bg-gray-200 protected-image">
                   <img
                     src={artwork.image}
                     alt={artwork.title}
-                    className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ${
+                    className={`w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 protected-image ${
                       artwork.id === 8 || artwork.id === 11 ? 'rotate-90' : ''
                     }`}
+                    onContextMenu={(e) => e.preventDefault()}
+                    onDragStart={(e) => e.preventDefault()}
+                    draggable={false}
                   />
                 </div>
                 
@@ -308,13 +311,16 @@ const Gallery = () => {
 
               {/* Image and Details */}
               <div className="bg-white rounded-2xl overflow-hidden">
-                <div className="h-[50vh] flex items-center justify-center bg-gray-50 p-4">
+                <div className="h-[50vh] flex items-center justify-center bg-gray-50 p-4 protected-image">
                   <img
                     src={filteredArtworks[selectedImage].image}
                     alt={filteredArtworks[selectedImage].title}
-                    className={`max-w-full max-h-full object-contain rounded-lg shadow-lg ${
+                    className={`max-w-full max-h-full object-contain rounded-lg shadow-lg protected-image ${
                       filteredArtworks[selectedImage].id === 8 || filteredArtworks[selectedImage].id === 11 ? 'rotate-90' : ''
                     }`}
+                    onContextMenu={(e) => e.preventDefault()}
+                    onDragStart={(e) => e.preventDefault()}
+                    draggable={false}
                   />
                 </div>
                 

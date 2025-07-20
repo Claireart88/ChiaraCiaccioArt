@@ -70,11 +70,14 @@ const Portfolio = () => {
                 className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 group"
               >
                 {/* Preview Image */}
-                <div className="aspect-video bg-gray-200 overflow-hidden relative">
+                <div className="aspect-video bg-gray-200 overflow-hidden relative protected-image">
                   <img
                     src={item.preview}
                     alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 protected-image"
+                    onContextMenu={(e) => e.preventDefault()}
+                    onDragStart={(e) => e.preventDefault()}
+                    draggable={false}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-night-900/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="absolute bottom-4 left-4 text-white">

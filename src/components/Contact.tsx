@@ -89,7 +89,7 @@ const Contact = () => {
                   <Instagram className="h-6 w-6" />
                 </a>
                 <a
-                  href="https://facebook.com/chiaraciaccioart"
+                  href="https://www.facebook.com/share/19Z8BbZANe/?mibextid=wwXIfr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-gold-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
@@ -100,11 +100,14 @@ const Contact = () => {
             </div>
 
             {/* Studio Image */}
-            <div className="relative rounded-2xl overflow-hidden shadow-lg">
+            <div className="relative rounded-2xl overflow-hidden shadow-lg protected-image">
               <img
                 src="https://images.pexels.com/photos/1183992/pexels-photo-1183992.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Studio dell'artista"
-                className="w-full h-64 object-cover"
+                className="w-full h-64 object-cover protected-image"
+                onContextMenu={(e) => e.preventDefault()}
+                onDragStart={(e) => e.preventDefault()}
+                draggable={false}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-night-900/50 to-transparent">
                 <div className="absolute bottom-4 left-4 text-white">

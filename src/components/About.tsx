@@ -67,11 +67,14 @@ const About = () => {
 
           {/* Image - Now takes 1/3 of the space */}
           <div className="lg:col-span-1 relative">
-            <div className="aspect-[3/4] bg-gradient-to-br from-peacock-50 via-white to-gold-50 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="aspect-[3/4] bg-gradient-to-br from-peacock-50 via-white to-gold-50 rounded-2xl overflow-hidden shadow-2xl protected-image">
               <img
                 src="/images/immagine profilo.jpg"
                 alt="Chiara Ciaccio - Artista Contemporanea"
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-center protected-image"
+                onContextMenu={(e) => e.preventDefault()}
+                onDragStart={(e) => e.preventDefault()}
+                draggable={false}
               />
             </div>
             

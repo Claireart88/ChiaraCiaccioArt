@@ -8,11 +8,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
+            <div className="flex items-center space-x-2 mb-4 protected-image">
               <img
                 src="/images/WhatsApp Image 2025-07-04 at 18.44.41.jpeg"
                 alt="Chiara Ciaccio"
-                className="h-10 w-auto object-contain brightness-0 invert opacity-80"
+                className="h-10 w-auto object-contain brightness-0 invert opacity-80 protected-image"
+                onContextMenu={(e) => e.preventDefault()}
+                onDragStart={(e) => e.preventDefault()}
+                draggable={false}
               />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6">
@@ -30,7 +33,7 @@ const Footer = () => {
                 <Instagram className="h-5 w-5" />
               </a>
               <a
-                href="https://facebook.com/chiaraciaccioart"
+                href="https://www.facebook.com/share/19Z8BbZANe/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gold-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300"

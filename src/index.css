@@ -16,4 +16,79 @@
     font-family: 'Futura', 'Futura PT', 'Century Gothic', 'Avenir', system-ui, sans-serif;
     letter-spacing: -0.025em;
   }
+
+  /* Image Protection Styles */
+  .protected-image {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    pointer-events: none;
+    position: relative;
+  }
+
+  .protected-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: 1;
+    pointer-events: auto;
+  }
+
+  .protected-image::after {
+    content: '© Chiara Ciaccio - Tutti i diritti riservati';
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 4px 8px;
+    font-size: 10px;
+    border-radius: 4px;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.8;
+  }
+
+  /* Disable context menu on protected images */
+  .protected-image img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  /* Disable print for images */
+  @media print {
+    .protected-image {
+      display: none !important;
+    }
+  }
+
+  /* Disable developer tools shortcuts */
+  body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  /* Allow text selection for content */
+  p, h1, h2, h3, h4, h5, h6, span, div:not(.protected-image) {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
 }

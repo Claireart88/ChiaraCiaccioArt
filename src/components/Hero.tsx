@@ -10,11 +10,14 @@ const Hero = () => {
       <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-gradient-to-br from-night-100/20 to-night-200/20 rounded-full opacity-30 blur-lg"></div>
 
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-8 flex justify-center">
+        <div className="mb-8 flex justify-center protected-image">
           <img
             src="/images/WhatsApp Image 2025-07-04 at 18.44.41.jpeg"
             alt="Chiara Ciaccio"
-            className="h-32 md:h-48 lg:h-72 xl:h-80 w-auto object-contain max-w-full"
+            className="h-32 md:h-48 lg:h-72 xl:h-80 w-auto object-contain max-w-full protected-image"
+            onContextMenu={(e) => e.preventDefault()}
+            onDragStart={(e) => e.preventDefault()}
+            draggable={false}
           />
         </div>
         
