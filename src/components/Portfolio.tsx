@@ -157,24 +157,6 @@ const Portfolio = () => {
           </div>
         </div>
 
-        {/* Additional Info */}
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="text-center p-6 bg-gray-50 rounded-xl">
-            <FileText className="h-8 w-8 text-peacock-700 mx-auto mb-3" />
-            <h4 className="text-lg font-medium text-night-900 mb-2">Alta Qualità</h4>
-            <p className="text-sm text-night-700">Immagini in alta risoluzione e testi curati nei minimi dettagli</p>
-          </div>
-          <div className="text-center p-6 bg-gray-50 rounded-xl">
-            <Download className="h-8 w-8 text-peacock-700 mx-auto mb-3" />
-            <h4 className="text-lg font-medium text-night-900 mb-2">Download Immediato</h4>
-            <p className="text-sm text-night-700">Accesso istantaneo a tutti i materiali del portfolio</p>
-          </div>
-          <div className="text-center p-6 bg-gray-50 rounded-xl">
-            <Palette className="h-8 w-8 text-peacock-700 mx-auto mb-3" />
-            <h4 className="text-lg font-medium text-night-900 mb-2">Contenuto Esclusivo</h4>
-            <p className="text-sm text-night-700">Approfondimenti sulle tecniche e il processo creativo</p>
-          </div>
-        </div>
       </div>
     </section>
   );
