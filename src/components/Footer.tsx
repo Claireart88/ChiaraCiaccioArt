@@ -90,8 +90,6 @@ const Footer = () => {
               <li>Opere Originali</li>
               <li>Commissioni Personalizzate</li>
               <li>Portfolio Digitale</li>
-              <li>Consulenze Creative</li>
-              <li>Materiale Promozionale</li>
             </ul>
           </div>
         </div>
