@@ -209,6 +209,12 @@ const Contact = () => {
                 le dimensioni desiderate, i colori preferiti e qualsiasi dettaglio specifico 
                 che vorresti vedere nell'opera.
               </p>
+              <p className="text-xs text-peacock-700 mt-2">
+                Inviando questo modulo accetti il trattamento dei tuoi dati personali secondo la nostra{' '}
+                <a href="#privacy" className="underline hover:text-peacock-800">
+                  Privacy Policy
+                </a>
+              </p>
             </div>
           </div>
         </div>

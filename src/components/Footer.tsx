@@ -75,6 +75,11 @@ const Footer = () => {
                   Contatti
                 </a>
               </li>
+              <li>
+                <a href="#privacy" className="text-gray-400 hover:text-peacock-400 transition-colors">
+                  Privacy Policy
+                </a>
+              </li>
             </ul>
           </div>
 
