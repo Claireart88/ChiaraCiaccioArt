@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shield, X, Mail, Phone, MapPin, Calendar, FileText } from 'lucide-react';
+import { Shield, X, Mail, MapPin, Calendar, FileText } from 'lucide-react';
 
 interface PrivacyPolicyProps {
   isOpen: boolean;
@@ -60,10 +60,6 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ isOpen, onClose }) => {
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4 text-peacock-700" />
                   <span>chiaraciaccio.art@gmail.com</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Phone className="h-4 w-4 text-peacock-700" />
-                  <span>+39 3921002257</span>
                 </div>
               </div>
             </div>
@@ -181,10 +177,6 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({ isOpen, onClose }) => {
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4 text-peacock-700" />
                   <span className="text-sm text-peacock-800">chiaraciaccio.art@gmail.com</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <Phone className="h-4 w-4 text-peacock-700" />
-                  <span className="text-sm text-peacock-800">+39 3921002257</span>
                 </div>
               </div>
             </div>
