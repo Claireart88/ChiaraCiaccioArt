@@ -25,7 +25,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.instagram.com/la_clairee?igsh=MWxra3BpOWJzZGswYg%3D%3D&utm_source=qr"
+                href="https://www.instagram.com/chiaraciaccio.art?igsh=MXRtOG05YXRjMGJndA%3D%3D&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-peacock-700 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300"
