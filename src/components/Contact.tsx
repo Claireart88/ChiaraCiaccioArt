@@ -8,6 +8,8 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
@@ -16,12 +18,43 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      // Create mailto link with form data
+      const subject = encodeURIComponent(`[Sito Web] ${formData.subject}`);
+      const body = encodeURIComponent(
+        `Nome: ${formData.name}\n` +
+        `Email: ${formData.email}\n` +
+        `Oggetto: ${formData.subject}\n\n` +
+        `Messaggio:\n${formData.message}\n\n` +
+        `---\n` +
+        `Messaggio inviato dal sito web chiaraciaccio.art`
+      );
+      
+      const mailtoLink = `mailto:chiaraciaccio.art@gmail.com?subject=${subject}&body=${body}`;
+      
+      // Open email client
+      window.location.href = mailtoLink;
+      
+      // Show success message
+      setSubmitStatus('success');
+      
+      // Reset form after successful submission
+      setTimeout(() => {
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setSubmitStatus('idle');
+      }, 3000);
+      
+    } catch (error) {
+      console.error('Error sending email:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -189,13 +222,51 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-peacock-700 text-white rounded-lg hover:bg-peacock-800 transition-all duration-300 font-light flex items-center justify-center space-x-2"
+                disabled={isSubmitting}
+                className={`w-full px-6 py-3 rounded-lg transition-all duration-300 font-light flex items-center justify-center space-x-2 ${
+                  isSubmitting 
+                    ? 'bg-gray-400 cursor-not-allowed' 
+                    : submitStatus === 'success'
+                    ? 'bg-green-600 hover:bg-green-700'
+                    : submitStatus === 'error'
+                    ? 'bg-red-600 hover:bg-red-700'
+                    : 'bg-peacock-700 hover:bg-peacock-800'
+                } text-white`}
               >
-                <Send className="h-5 w-5" />
-                <span>Invia Messaggio</span>
+                <Send className={`h-5 w-5 ${isSubmitting ? 'animate-pulse' : ''}`} />
+                <span>
+                  {isSubmitting 
+                    ? 'Invio in corso...' 
+                    : submitStatus === 'success'
+                    ? 'Messaggio Inviato!'
+                    : submitStatus === 'error'
+                    ? 'Riprova'
+                    : 'Invia Messaggio'
+                  }
+                </span>
               </button>
             </form>
 
+            {/* Status Messages */}
+            {submitStatus === 'success' && (
+              <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg">
+                <p className="text-green-800 text-sm">
+                  ✅ <strong>Messaggio inviato con successo!</strong> Il tuo client email si è aperto con il messaggio precompilato. 
+                  Invia l'email per completare l'invio.
+                </p>
+              </div>
+            )}
+            
+            {submitStatus === 'error' && (
+              <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+                <p className="text-red-800 text-sm">
+                  ❌ <strong>Errore nell'invio.</strong> Riprova o contattaci direttamente all'email: 
+                  <a href="mailto:chiaraciaccio.art@gmail.com" className="underline ml-1">
+                    chiaraciaccio.art@gmail.com
+                  </a>
+                </p>
+              </div>
+            )}
             <div className="mt-6 p-4 bg-peacock-50 rounded-lg">
               <p className="text-sm text-peacock-800">
                 <strong>Nota:</strong> Per commissioni personalizzate, includi nel messaggio 
