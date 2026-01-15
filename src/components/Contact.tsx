@@ -83,6 +83,8 @@ const Contact = () => {
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-peacock-700 rounded-full flex items-center justify-center">
+                    <Mail className="h-6 w-6 text-white" />
+                  </div>
                   <div className="flex-shrink-0 w-12 h-12 bg-night-700 rounded-full flex items-center justify-center">
                     <Mail className="h-6 w-6 text-white" />
                   </div>
@@ -92,8 +94,6 @@ const Contact = () => {
                     <p className="text-sm text-night-600 mt-1">Rispondo entro 24 ore</p>
                   </div>
                 </div>
-
-
               </div>
             </div>
 
