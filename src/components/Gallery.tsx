@@ -228,9 +228,8 @@ const Gallery = () => {
               onClick={() => setSelectedCategory(category.id)}
               className={`px-6 py-2 rounded-full transition-all duration-300 ${
                 selectedCategory === category.id
-                  ? 'bg-night-700 text-white shadow-lg'
+                  ? 'bg-peacock-700 text-white shadow-lg'
                   : 'bg-white text-night-700 hover:bg-peacock-50 border border-gray-200'
-                  : 'bg-white text-night-700 hover:bg-night-50 border border-gray-200'
               }`}
             >
               {category.name}
@@ -360,19 +359,19 @@ const Gallery = () => {
                     <div>
                       <span className="font-medium text-night-900 block mb-1">Informazioni:</span>
                       <div className="space-y-2">
-                        <p className="text-peacock-600 font-medium">
+                        <p className="text-night-600 font-medium">
                           <a 
                             href="#contact" 
-                            className="hover:text-peacock-800 transition-colors block"
+                            className="hover:text-night-800 transition-colors block"
                             onClick={closeLightbox}
                           >
                             Contattaci per dettagli
                           </a>
                         </p>
-                        <p className="text-peacock-600 font-medium">
+                        <p className="text-night-600 font-medium">
                           <a 
                             href="#contact" 
-                            className="hover:text-peacock-800 transition-colors block"
+                            className="hover:text-night-800 transition-colors block"
                             onClick={closeLightbox}
                           >
                             Scrivici per maggiori informazioni
