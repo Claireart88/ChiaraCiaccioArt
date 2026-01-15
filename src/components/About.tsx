@@ -47,19 +47,19 @@ const About = () => {
             {/* Techniques */}
             <div className="grid grid-cols-2 gap-6 pt-8">
               <div className="flex items-center space-x-3">
-                <Brush className="h-6 w-6 text-peacock-700" />
+                <Brush className="h-6 w-6 text-night-700" />
                 <span className="text-night-700">Acrilico & Olio</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Palette className="h-6 w-6 text-gold-500" />
+                <Palette className="h-6 w-6 text-night-700" />
                 <span className="text-night-700">Tecnica a Colatura</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Sparkles className="h-6 w-6 text-gold-500" />
+                <Sparkles className="h-6 w-6 text-night-700" />
                 <span className="text-night-700">Tecniche Miste</span>
               </div>
               <div className="flex items-center space-x-3">
-                <Brush className="h-6 w-6 text-peacock-600" />
+                <Brush className="h-6 w-6 text-night-700" />
                 <span className="text-night-700">Arte Contemporanea</span>
               </div>
             </div>

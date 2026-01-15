@@ -5,7 +5,7 @@
 /* Futura font fallback and custom styles */
 @layer base {
   body {
-    font-family: 'Futura', 'Futura PT', 'Century Gothic', 'Avenir', system-ui, sans-serif;
+    font-family: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
     font-feature-settings: 'kern' 1, 'liga' 1;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -13,8 +13,17 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Futura', 'Futura PT', 'Century Gothic', 'Avenir', system-ui, sans-serif;
-    letter-spacing: -0.025em;
+    font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+    letter-spacing: -0.015em;
+    font-weight: 400;
+  }
+
+  /* Brand name styling */
+  .brand-name {
+    font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.5px;
   }
 
   /* Image Protection Styles */

@@ -83,6 +83,7 @@ const Contact = () => {
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-peacock-700 rounded-full flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 bg-night-700 rounded-full flex items-center justify-center">
                     <Mail className="h-6 w-6 text-white" />
                   </div>
                   <div>
@@ -107,7 +108,7 @@ const Contact = () => {
                   href="https://www.instagram.com/chiaraciaccio.art?igsh=MXRtOG05YXRjMGJndA%3D%3D&utm_source=qr"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-peacock-700 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+                  className="w-12 h-12 bg-night-700 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
                 >
                   <Instagram className="h-6 w-6" />
                 </a>
@@ -115,7 +116,7 @@ const Contact = () => {
                   href="https://www.facebook.com/share/19Z8BbZANe/?mibextid=wwXIfr"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gold-500 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
+                  className="w-12 h-12 bg-night-700 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform duration-300"
                 >
                   <Facebook className="h-6 w-6" />
                 </a>
