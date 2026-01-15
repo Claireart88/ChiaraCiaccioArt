@@ -92,7 +92,8 @@ const Portfolio = () => {
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center space-x-2">
                       <div className="w-10 h-10 bg-peacock-100 rounded-full flex items-center justify-center">
-                        <IconComponent className="h-5 w-5 text-peacock-700" />
+                      <div className="w-10 h-10 bg-night-100 rounded-full flex items-center justify-center">
+                        <IconComponent className="h-5 w-5 text-night-700" />
                       </div>
                       <span className="text-sm text-night-600 bg-gray-100 px-3 py-1 rounded-full">
                         {item.type}

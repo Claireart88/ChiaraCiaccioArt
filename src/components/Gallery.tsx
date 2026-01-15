@@ -228,8 +228,9 @@ const Gallery = () => {
               onClick={() => setSelectedCategory(category.id)}
               className={`px-6 py-2 rounded-full transition-all duration-300 ${
                 selectedCategory === category.id
-                  ? 'bg-peacock-700 text-white shadow-lg'
+                  ? 'bg-night-700 text-white shadow-lg'
                   : 'bg-white text-night-700 hover:bg-peacock-50 border border-gray-200'
+                  : 'bg-white text-night-700 hover:bg-night-50 border border-gray-200'
               }`}
             >
               {category.name}
