@@ -131,6 +131,7 @@ const Portfolio = () => {
             );
           })}
         </div>
+            )
 
         {/* Call to Action */}
         <div className="text-center">
@@ -162,6 +163,9 @@ const Portfolio = () => {
         </div>
 
       </div>
+    }
+    )
+    }
     </section>
   );
 };
