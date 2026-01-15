@@ -91,7 +91,6 @@ const Portfolio = () => {
                   {/* Icon and Type */}
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center space-x-2">
-                      <div className="w-10 h-10 bg-peacock-100 rounded-full flex items-center justify-center">
                       <div className="w-10 h-10 bg-night-100 rounded-full flex items-center justify-center">
                         <IconComponent className="h-5 w-5 text-night-700" />
                       </div>
@@ -131,7 +130,6 @@ const Portfolio = () => {
             );
           })}
         </div>
-            )
 
         {/* Call to Action */}
         <div className="text-center">
@@ -140,7 +138,7 @@ const Portfolio = () => {
               Hai bisogno di materiale aggiuntivo?
             </h3>
             <p className="text-night-700 mb-6">
-              Per richieste specifiche, immagini ad alta risoluzione o informazioni 
+              Per richieste specifiche, immagini ad alta risoluzione o informazioni
               dettagliate su singole opere, non esitare a contattarmi direttamente.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -161,11 +159,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-
       </div>
-    }
-    )
-    }
     </section>
   );
 };
