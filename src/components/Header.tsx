@@ -7,10 +7,10 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-night-900/95 backdrop-blur-sm border-b border-night-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <span className="text-xl text-white brand-name">Chiara Ciaccio</span>
+            <span className="text-3xl font-serif font-bold text-white brand-name tracking-wide">Chiara Ciaccio</span>
           </div>
 
           {/* Desktop Navigation */}

@@ -85,9 +85,6 @@ const Contact = () => {
                   <div className="flex-shrink-0 w-12 h-12 bg-peacock-700 rounded-full flex items-center justify-center">
                     <Mail className="h-6 w-6 text-white" />
                   </div>
-                  <div className="flex-shrink-0 w-12 h-12 bg-night-700 rounded-full flex items-center justify-center">
-                    <Mail className="h-6 w-6 text-white" />
-                  </div>
                   <div>
                     <h4 className="text-lg font-medium text-night-900">Email</h4>
                     <p className="text-night-700">chiaraciaccio.art@gmail.com</p>
