@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'Helvetica Neue', 'Arial', 'sans-serif'],
         serif: ['Playfair Display', 'Georgia', 'Times New Roman', 'serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
       colors: {
         // Palette artistica e sofisticata
